@@ -25,8 +25,8 @@ public class VersionProblem {
         }
 
         for(int i =0; i<size; i++){
-            int v1 = Integer.valueOf(str.charAt(i));
-            int v2 = Integer.valueOf(str2.charAt(i));
+            int v1 = (int) str.charAt(i);
+            int v2 = (int) str2.charAt(i);
             if(v1 != v2 ){
                 if(v1>v2){
                     res = str;

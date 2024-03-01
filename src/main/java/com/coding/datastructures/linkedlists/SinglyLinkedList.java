@@ -8,7 +8,6 @@ public class SinglyLinkedList {
      *  data -> ptr for next node.
      */
     static class Node {
-
         int data;
         Node next;
 
@@ -50,8 +49,11 @@ public class SinglyLinkedList {
         Node newNode = new Node();
         newNode.data = data;
         newNode.next = null;
+
         // pointer for last node
         Node last = headNode;
+
+        //Iterate till last node
         while (last.next != null){
             last = last.next;
         }
@@ -84,35 +86,35 @@ public class SinglyLinkedList {
 
     /**
      * Delete node from head position
-     * @return Boolean
      */
-    public boolean deleteAtHead(){
+    public void deleteAtHead(){
         if(isEmpty()){
             System.out.println("Delete : List is empty");
-            return false;
+            return;
         }
         Node tempNode = headNode;
         if(tempNode != null){
             headNode = tempNode.next;
             tempNode.next = null;
         }
-        return true;
+        System.out.println("Deleted node: "+tempNode.data);
      }
 
     /**
      * Delete node from end position
-     * @return Boolean
      */
-     public boolean deleteAtEnd(){
+     public void deleteAtEnd(){
          if(isEmpty()){
              System.out.println("Delete at end : List is empty");
-             return false;
+             return;
          }
          Node currentNode = headNode;
-         while(currentNode !=null){
-             //currentNode
+         Node previousNode = headNode;
+         while(currentNode.next !=null){
+             previousNode = currentNode;
+             currentNode = currentNode.next;
          }
-        return true;
+         previousNode.next = null;
      }
 
     /**

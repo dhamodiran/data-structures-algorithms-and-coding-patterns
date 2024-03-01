@@ -26,6 +26,8 @@ public class SinglyLinkedListMainApp {
         list2.printList();
         list2.insertAfter(401,500);
         list2.printList();
+        list2.deleteAtEnd();
+        list2.printList();
 
     }
 
