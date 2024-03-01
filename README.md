@@ -1,1 +1,1 @@
-# datastructres-algorithms-and-codding-patterns
+# datastructres-algorithms-and-coding-patterns
