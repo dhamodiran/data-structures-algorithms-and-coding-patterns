@@ -1,4 +1,4 @@
-package com.coding.dsa;
+package com.coding.datastructures;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
