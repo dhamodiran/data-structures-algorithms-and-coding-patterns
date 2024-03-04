@@ -25,14 +25,22 @@ public class _02_ContainerWithMostWater {
     /**
      * Optimized approach using two pointers
      *
-     * An optimized approach to solve this problem is using two pointers, start and end, initialized at the beginning and end of the array, respectively. We also create a variable to store the maximum area and set it to zero.
+     * An optimized approach to solve this problem is using two pointers, start and end,
+     * initialized at the beginning and end of the array, respectively. We also create a variable to store the maximum area and set it to zero.
      *
      * While iterating through the array, height, the algorithm proceeds through the following steps:
      *
      *     Calculate the distance, width, between the two vertical lines pointed by start and end pointer as width == end −− start.
-     *     The height of the container is determined by the shorter of the two vertical lines pointed by the start and end pointers. Then, multiply this height by the width to calculate the area of the container.
+     *
+     *     The height of the container is determined by the shorter of the two vertical lines pointed by the start and end pointers.
+     *     Then, multiply this height by the width to calculate the area of the container.
+     *
      *     If the calculated area is greater than the current value of the maximum area, update the maximum area.
-     *     Move the pointer pointing to the shorter vertical line inward by one step. This is because if we try to move the pointer at the longer vertical line, we won’t gain any increase in area, since the shorter line limits it.
+     *     Move the pointer pointing to the shorter vertical line inward by one step.
+     *
+     *     This is because if we try to move the pointer at the longer vertical line, we won’t gain any increase in area,
+     *     since the shorter line limits it.
+     *
      *     Keep iterating through the array until the pointers meet.
      *
      * After iterating through the array, return the maximum area.
