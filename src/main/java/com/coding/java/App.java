@@ -1,4 +1,4 @@
-package com.coding.dsa;
+package com.coding.java;
 
 /**
  * Hello world!
