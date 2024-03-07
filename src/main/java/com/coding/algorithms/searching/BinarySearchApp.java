@@ -8,14 +8,16 @@ public class BinarySearchApp {
         int[] intArray = new int[]{10,30,20,50,70,40,60};
         Arrays.sort(intArray);
         Arrays.stream(intArray).forEach(e-> System.out.print(e+" "));
-        System.out.println("\nINDEX:"+binarySearch(intArray,70, intArray.length));
-        System.out.println("\nINDEX:"+binarySearch(intArray,30, intArray.length));
-        System.out.println("\nINDEX:"+binarySearch(intArray,100, intArray.length));
+        System.out.println("\nINDEX:(70)"+binarySearch(intArray,70, intArray.length));
+        System.out.println("\nINDEX:(30)"+binarySearch(intArray,30, intArray.length));
+        System.out.println("\nINDEX:(100)"+binarySearch(intArray,100, intArray.length));
+        System.out.println("\nINDEX:(10)"+binarySearch(intArray,10, intArray.length));
 
         System.out.println("Solution using Recurssion");
         System.out.println("\nINDEX:"+binarySearchRecurrsion(intArray,70,0, intArray.length-1));
         System.out.println("\nINDEX:"+binarySearchRecurrsion(intArray,100,0, intArray.length-1));
         System.out.println("\nINDEX:"+binarySearchRecurrsion(intArray,50,0, intArray.length-1));
+
 
     }
 
